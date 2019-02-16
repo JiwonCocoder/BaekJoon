@@ -1,5 +1,6 @@
 package maxheap_11279;
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
@@ -52,39 +53,20 @@ public class Main {
 	}
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+
 		//String[] s = br.readLine().split(" ");
 		//StringTokenizer st = new StringTokenizer(br.readLine());
 		//int count= Integer.parseInt(s[0]);
-		String line=null;
-		while ((line = br.readLine()) != null) {
-			int[] array = new int[Integer.parseInt(line.trim())];
-			StringTokenizer st = new StringTokenizer(br.readLine().trim());
-
-			for (int i = 0; i < array.length; i++) {
-				array[i] = Integer.parseInt(st.nextToken());
-				System.out.println(array[i]);
-
-			}
-		}
-	
-			
-		/*int[] array = null;
-		while((line=br.readLine())!=null){
-			int kk=Integer.parseInt(line.trim());
-
-			array=new int[Integer.parseInt(line.trim())+1];
-			StringTokenizer st = new StringTokenizer(br.readLine().trim());
-			for (int i = 0; i < array.length; i++)
-				array[i] = Integer.parseInt(st.nextToken());
-		}
-		int count= array[0];
-		int flagNumber=0;
+		String line;
+		while((line=br.readLine())!=null)
+		int count= Integer.parseInt(st.nextToken());
 		int[] numberArray=new int[count];
-
-		for(int i=0;i<count;i++) {
+		int flagNumber=0;
+		for(int i=1;i<=count;i++) {
 			//flagNumber=Integer.parseInt(s[i]);
-			//flagNumber=Integer.parseInt(st.nextToken());
-			flagNumber=array[i+1];
+			flagNumber=Integer.parseInt(st.nextToken());
+
 			int numberPrinted=0;
 			
 			if(flagNumber==0) {
@@ -96,7 +78,7 @@ public class Main {
 				buildMaxHeap(numberArray, flagNumber);
 			}
 			
-		}*/
+		}
 		br.close();
 	}
 
