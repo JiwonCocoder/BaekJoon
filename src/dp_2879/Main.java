@@ -2,7 +2,8 @@ package dp_2879;
 import java.io.*;
 import java.util.*;
 import java.util.StringTokenizer;
-public class Main {
+public class Main{
+
 	public static void main(String[] args) throws IOException {
 		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
 		String line;
@@ -10,7 +11,8 @@ public class Main {
 		ArrayList<Integer> strList =new ArrayList<Integer>();
 		while((line=br.readLine())!=null){
 			System.out.println(line);
-			//if(line.isEmpty()) break;
+			if(line.isEmpty()) 
+				break;
 			StringTokenizer st = new StringTokenizer(line, " ");
 			while(st.hasMoreTokens()) {
 				strList.add(Integer.parseInt(st.nextToken()));
@@ -25,7 +27,6 @@ public class Main {
 			int arrayListStartIndex=i+1;
 			initArray[i]=strList.get(arrayListStartIndex);
 			destinationArray[i]=strList.get(arrayListStartIndex+arrayIndexAmount);
-
 		}
 				
 
