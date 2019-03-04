@@ -9,7 +9,7 @@ public class Main{
 		String line;
 		int count=0;
 		ArrayList<Integer> strList =new ArrayList<Integer>();
-		/*while((line=br.readLine())!=null){
+		while((line=br.readLine())!=null){
 			System.out.println(line);
 			if(line.isEmpty()) 
 				break;
@@ -17,7 +17,7 @@ public class Main{
 			while(st.hasMoreTokens()) {
 				strList.add(Integer.parseInt(st.nextToken()));
 			}
-		}*/
+		}
 		for(int i = 0; i < 3; i++){
 			line=br.readLine();
 			System.out.println(line);
@@ -74,6 +74,7 @@ public class Main{
 			if(i < changePoint) {
 				leftArray[j] = initArray[i];
 				System.out.println("l"+leftArray[j]);
+				
 			}
 
 			else {
